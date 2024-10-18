@@ -1,6 +1,5 @@
 package dika.division.Format;
 
-import GermanFormat;
 import dika.division.enums.FormatType;
 
 public class FormatFerm {

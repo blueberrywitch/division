@@ -1,5 +1,6 @@
 package dika.division;
 
+import dika.division.Format.FormatFerm;
 import dika.division.enums.FormatType;
 import dika.division.logicss.Logics;
 import dika.division.util.Scan;
