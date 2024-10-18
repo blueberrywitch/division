@@ -1,4 +1,4 @@
-package dika.division.Format;
+package dika.division.format;
 
 public class Format {
 

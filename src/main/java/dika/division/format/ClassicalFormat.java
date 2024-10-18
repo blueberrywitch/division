@@ -1,4 +1,4 @@
-package dika.division.Format;
+package dika.division.format;
 
 import static java.lang.Math.abs;
 import static java.lang.String.valueOf;
