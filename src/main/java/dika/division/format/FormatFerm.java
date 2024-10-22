@@ -5,16 +5,11 @@ import dika.division.enums.FormatType;
 public class FormatFerm {
 
     public void printFormat(FormatType type, int[] result, int[] remaindor, int dividend, int divisor) {
-        Format format = null;
+        Format format = switch (type) {
+            case CLASSICALFORMAT -> new ClassicalFormat();
+            case GERMANFORMAT -> new GermanFormat();
+        };
 
-        switch (type) {
-            case CLASSICALFORMAT:
-                format = new ClassicalFormat();
-                break;
-            case GERMANFORMAT:
-                format = new GermanFormat();
-                break;
-        }
         format.printDivision(result, remaindor, dividend, divisor);
     }
 }

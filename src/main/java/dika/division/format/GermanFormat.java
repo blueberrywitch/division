@@ -7,12 +7,14 @@ public class GermanFormat extends Format {
         System.out.print(" " + dividend + " : " + divisor + " = " + dividend / divisor + "\n");
         int i = 1;
         while (i <= result.length) {
-            if (i != 1) {
-                System.out.println(" ".repeat(i) + remaindor[i - 1]);
-            }
-            if (i != result.length) {
-                System.out.println(" ".repeat(i) + result[i - 1]);
-                System.out.println(" ".repeat(i) + "--");
+            if (remaindor[i - 1] != 0) {
+                if (i != 1) {
+                    System.out.println(" ".repeat(i) + remaindor[i - 1]);
+                }
+                if (i != result.length) {
+                    System.out.println(" ".repeat(i) + result[i - 1]);
+                    System.out.println(" ".repeat(i) + "--");
+                }
             }
             i++;
         }
